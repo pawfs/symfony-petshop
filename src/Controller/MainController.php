@@ -15,9 +15,9 @@ class MainController extends AbstractController
 
         $myPet = [
           'name' => 'Pompom',
-          'species' => 'cat',
-          'age' => '4 months',
-          'status' => 'unadopted',
+          'species' => 'Cat',
+          'age' => [3, 'months'],
+          'status' => 'Available',
         ];
         
         return $this->render('main/homepage.html.twig', [
