@@ -2,16 +2,16 @@
 
 {%block body%}
 
-<h2>Welcome to Petshop!</h2>
-<p>Here you can your dream pet!</p>
+<h2>Welcome to Petshop</h2>
+<p>Where you can find your dream pet</p>
 
 <div>
 
-    Browse through {{ numberOfPets}} Pets!
+    Browse through {{ pets|length }} Pets!
 
-    {% if numberOfPets > 50 %}
+    {% if pets|length >= 50 %}
 
-        <p>Wow, that's a lot of pets!</p>
+        <p>(Wow, that's a lot of pets!)</p>
 
     {% endif %}
 
@@ -19,7 +19,7 @@
 
 <div>
 
-    <h2>Our Pets</h2>
+    <h3>Find your next paw-friend!</h3>
 
     <table>
       <tr>

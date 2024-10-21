@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\PetRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -9,20 +10,14 @@ use Symfony\Component\Routing\Attribute\Route;
 class MainController extends AbstractController
 {
     #[Route('/')]
-    public function homepage(): Response
+    public function homepage(PetRepository $petRepository): Response
     {
-        $petCount = 57;
+        $pets = $petRepository->findAll();
+        $myPet = $pets[array_rand($pets)];
 
-        $myPet = [
-          'name' => 'Pompom',
-          'species' => 'Cat',
-          'age' => [3, 'months'],
-          'status' => 'Available',
-        ];
-        
         return $this->render('main/homepage.html.twig', [
-          'numberOfPets' => $petCount,
-          'myPet' => $myPet,
-        ],);
+            'myPet' => $myPet,
+            'pets' => $pets,
+        ], );
     }
 }
