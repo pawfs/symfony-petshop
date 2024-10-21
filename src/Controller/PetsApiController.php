@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Model\Pet;
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -10,7 +11,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class PetsApiController extends AbstractController
 {
   #[Route('/api/pets')]
-  public function getCollection(): Response {
+  public function getCollection(LoggerInterface $loggerInterface): Response {
+    $loggerInterface->info('Fetching all pets');
     $pets = [
       new Pet(
         1,
