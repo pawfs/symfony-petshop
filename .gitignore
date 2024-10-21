@@ -18,3 +18,19 @@
 /.php-cs-fixer.php
 /.php-cs-fixer.cache
 ###< php-cs-fixer/shim ###
+
+# Ignore IDE-specific files
+/.vscode/
+/.idea/
+
+# Ignore log files
+/logs/
+/var/log/
+
+# Ignore cache files
+/cache/
+/var/cache/
+
+# Ignore build artifacts
+/build/
+/dist/
