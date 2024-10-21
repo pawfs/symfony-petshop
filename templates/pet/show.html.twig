@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{pet.name}}{% endblock %}
+
+{% block body %}
+  <table>
+        <tbody>
+            <tr>
+                <th>Pet name</th>
+                <td>{{ pet.name }}</td>
+            </tr>
+            <tr>
+                <th>Species</th>
+                <td>{{ pet.species }}</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{{ pet.age|join(' ') }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ pet.status }}</td>
+            </tr>
+        </tbody>
+  </table>
+{% endblock %}

@@ -11,6 +11,18 @@ class PetRepository
     {
     }
 
+    public function find(int $id): ?Pet
+    {
+      $this->loggerInterface->info('Fetching pet with id: ' . $id);
+      $pets = $this->findAll();
+      foreach ($pets as $pet) {
+        if ($pet->getId() === $id) {
+          return $pet;
+        }
+      }
+      return null;
+    }
+
     public function findAll(): array
     {
       $this->loggerInterface->info('Fetching all pets');
