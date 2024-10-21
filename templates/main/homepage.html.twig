@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{%block body%}
+<h2>Welcome to Petshop!</h2>
+<p>Here you can your dream pet!</p>
+
+<div>
+
+    Browse through {{ numberOfPets}} Pets!
+
+    {% if numberOfPets > 50 %}
+
+        <p>Wow, that's a lot of pets!</p>
+
+    {% endif %}
+
+</div>
+
+<div>
+
+    <h2>Our Pets</h2>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>{{ myPet.name }}</td>
+      </tr>
+      <tr>
+        <th>Species</th>
+        <td>{{ myPet.species }}</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>{{ myPet.age }}</td>
+      </tr>
+      <tr>
+        <th>Status</th>
+        <td>{{ myPet.status }}</td>
+      </tr>
+    </table>
+
+</div>
+{%endblock%}
