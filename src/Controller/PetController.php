@@ -19,7 +19,7 @@ class PetController extends AbstractController
   //   ]);
   // }
 
-  #[Route('/pets/{id<\d+>}')]
+  #[Route('/pets/{id<\d+>}',name: 'app_pet_show')]
   public function show(int $id, PetRepository $petRepository): Response
   {
     $pet = $petRepository->find($id);
