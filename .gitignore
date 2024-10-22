@@ -34,3 +34,7 @@
 # Ignore build artifacts
 /build/
 /dist/
+###> symfony/asset-mapper ###
+/public/assets/
+/assets/vendor/
+###< symfony/asset-mapper ###

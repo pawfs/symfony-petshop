@@ -10,23 +10,24 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/api/pets')]
 class PetApiController extends AbstractController
 {
-  #[Route('', methods:['GET'])]
-  public function getCollection(PetRepository $petRepository): Response {
+    #[Route('', methods: ['GET'])]
+    public function getCollection(PetRepository $petRepository): Response
+    {
+        $pets = $petRepository->findAll();
 
-    $pets = $petRepository->findAll();
-
-    return $this->json($pets);
-  }
-
-  #[Route('/{id<\d+>}', methods:['GET'])]
-  public function get(int $id, PetRepository $petRepository): Response {
-    $pet = $petRepository->find($id);
-
-    if (!$pet) {
-      return $this->json(['error' => 'Pet not found'], 404);
-      //throw $this->createNotFoundException('Starship not found');
+        return $this->json($pets);
     }
 
-    return $this->json($pet);
-  }
+    #[Route('/{id<\d+>}', methods: ['GET'])]
+    public function get(int $id, PetRepository $petRepository): Response
+    {
+        $pet = $petRepository->find($id);
+
+        if (!$pet) {
+            return $this->json(['error' => 'Pet not found'], 404);
+            // throw $this->createNotFoundException('Starship not found');
+        }
+
+        return $this->json($pet);
+    }
 }

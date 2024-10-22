@@ -2,46 +2,51 @@
 
 {%block body%}
 
-<h2>Welcome to Petshop</h2>
-<p>Where you can find your dream pet</p>
+<main class="flex flex-col lg:flex-row">
+        {{ include('main/_petStatusAside.html.twig') }}
+        <div class="px-12 pt-10 w-full">
+            <h1 class="text-4xl font-semibold mb-8">
+                Pets in the shop
+            </h1>
 
-<div>
+            <div class="space-y-5">
+                <!-- start pet item -->
+                    <div class="bg-[#16202A] rounded-2xl pl-5 py-5 pr-11 flex flex-col min-[1174px]:flex-row min-[1174px]:justify-between">
+                        <div class="flex justify-center min-[1174px]:justify-start">
+                            <img class="h-[83px] w-[84px]" src="/images/status-in-progress.png" alt="status: in progress">
+                            <div class="ml-5">
+                                <div class="rounded-2xl py-1 px-3 flex justify-center w-32 items-center bg-amber-400/10">
+                                    <div class="rounded-full h-2 w-2 bg-amber-400 blur-[1px] mr-2"></div>
+                                    <p class="uppercase text-xs text-nowrap">In progress</p>
+                                </div>
+                                <h4 class="text-[22px] pt-1 font-semibold">
+                                    <a
+                                        class="hover:text-slate-200"
+                                        href="#"
+                                    >Captain Jack</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="flex justify-center min-[1174px]:justify-start mt-2 min-[1174px]:mt-0 shrink-0">
+                            <div class="border-r border-white/20 pr-8">
+                                <p class="text-slate-400 text-xs">Species</p>
+                                <p class="text-xl">Dog</p>
+                            </div>
 
-    Browse through {{ pets|length }} Pets!
+                            <div class="pl-8 w-[100px]">
+                                <p class="text-slate-400 text-xs">Age</p>
+                                <p class="text-xl">4 years</p>
+                            </div>
+                        </div>
+                    </div>
+                <!-- end pet item -->
+            </div>
 
-    {% if pets|length >= 50 %}
+            <p class="text-lg mt-5 text-center md:text-left">
+                Looking for your next paw friend?
+                <a href="#" class="underline font-semibold">Browse the {{ pets|length }} Pets in the shop!</a>
+            </p>
+        </div>
+    </main>
 
-        <p>(Wow, that's a lot of pets!)</p>
-
-    {% endif %}
-
-</div>
-
-<div>
-
-    <h3>Find your next paw-friend!</h3>
-
-    <table>
-      <tr>
-        <th>Name</th>
-        <td>
-        <a href="{{ path('app_pet_show', {'id': myPet.id}) }}">
-        {{ myPet.name }}
-        </td>
-      </tr>
-      <tr>
-        <th>Species</th>
-        <td>{{ myPet.species }}</td>
-      </tr>
-      <tr>
-        <th>Age</th>
-        <td>{{ myPet.age|join(' ') }}</td>
-      </tr>
-      <tr>
-        <th>Status</th>
-        <td>{{ myPet.status }}</td>
-      </tr>
-    </table>
-
-</div>
 {%endblock%}
