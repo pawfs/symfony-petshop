@@ -1,0 +1,572 @@
+[
+  {
+    "id": 1,
+    "name": "Mittens",
+    "species": "Cat",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 2,
+    "name": "Whiskers",
+    "species": "Cat",
+    "age": [
+      3,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 3,
+    "name": "Shadow",
+    "species": "Cat",
+    "age": [
+      1,
+      "year"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 4,
+    "name": "Simba",
+    "species": "Cat",
+    "age": [
+      4,
+      "years"
+    ],
+    "status": "Processing entry"
+  },
+  {
+    "id": 5,
+    "name": "Luna",
+    "species": "Cat",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 6,
+    "name": "Oliver",
+    "species": "Cat",
+    "age": [
+      6,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 7,
+    "name": "Leo",
+    "species": "Cat",
+    "age": [
+      3,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 8,
+    "name": "Milo",
+    "species": "Cat",
+    "age": [
+      1,
+      "year"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 9,
+    "name": "Charlie",
+    "species": "Cat",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 10,
+    "name": "Max",
+    "species": "Cat",
+    "age": [
+      5,
+      "years"
+    ],
+    "status": "Processing entry"
+  },
+  {
+    "id": 11,
+    "name": "Bella",
+    "species": "Cat",
+    "age": [
+      4,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 12,
+    "name": "Lucy",
+    "species": "Cat",
+    "age": [
+      3,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 13,
+    "name": "Chloe",
+    "species": "Cat",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "Processing entry"
+  },
+  {
+    "id": 14,
+    "name": "Lily",
+    "species": "Cat",
+    "age": [
+      1,
+      "year"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 15,
+    "name": "Sophie",
+    "species": "Cat",
+    "age": [
+      6,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 16,
+    "name": "Nala",
+    "species": "Cat",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 17,
+    "name": "Zoe",
+    "species": "Cat",
+    "age": [
+      3,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 18,
+    "name": "Cleo",
+    "species": "Cat",
+    "age": [
+      4,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 19,
+    "name": "Daisy",
+    "species": "Cat",
+    "age": [
+      5,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 20,
+    "name": "Misty",
+    "species": "Cat",
+    "age": [
+      1,
+      "year"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 21,
+    "name": "Buddy",
+    "species": "Dog",
+    "age": [
+      5,
+      "months"
+    ],
+    "status": "In waitlist"
+  },
+  {
+    "id": 22,
+    "name": "Rocky",
+    "species": "Dog",
+    "age": [
+      1,
+      "year"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 23,
+    "name": "Duke",
+    "species": "Dog",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 24,
+    "name": "Bear",
+    "species": "Dog",
+    "age": [
+      3,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 25,
+    "name": "Toby",
+    "species": "Dog",
+    "age": [
+      4,
+      "years"
+    ],
+    "status": "Processing entry"
+  },
+  {
+    "id": 26,
+    "name": "Jack",
+    "species": "Dog",
+    "age": [
+      5,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 27,
+    "name": "Teddy",
+    "species": "Dog",
+    "age": [
+      6,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 28,
+    "name": "Riley",
+    "species": "Dog",
+    "age": [
+      7,
+      "months"
+    ],
+    "status": "In waitlist"
+  },
+  {
+    "id": 29,
+    "name": "Bailey",
+    "species": "Dog",
+    "age": [
+      8,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 30,
+    "name": "Buster",
+    "species": "Dog",
+    "age": [
+      9,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 31,
+    "name": "Coco",
+    "species": "Dog",
+    "age": [
+      10,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 32,
+    "name": "Lucky",
+    "species": "Dog",
+    "age": [
+      11,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 33,
+    "name": "Sam",
+    "species": "Dog",
+    "age": [
+      1,
+      "year"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 34,
+    "name": "Oscar",
+    "species": "Dog",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 35,
+    "name": "Gizmo",
+    "species": "Dog",
+    "age": [
+      3,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 36,
+    "name": "Rusty",
+    "species": "Dog",
+    "age": [
+      4,
+      "years"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 37,
+    "name": "Boomer",
+    "species": "Dog",
+    "age": [
+      5,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 38,
+    "name": "Scout",
+    "species": "Dog",
+    "age": [
+      6,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 39,
+    "name": "Rex",
+    "species": "Dog",
+    "age": [
+      7,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 40,
+    "name": "Bruno",
+    "species": "Dog",
+    "age": [
+      8,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 41,
+    "name": "Thumper",
+    "species": "Rabbit",
+    "age": [
+      3,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 42,
+    "name": "Bugs",
+    "species": "Rabbit",
+    "age": [
+      1,
+      "year"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 43,
+    "name": "Bambi",
+    "species": "Rabbit",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "In waitlist"
+  },
+  {
+    "id": 44,
+    "name": "Cottontail",
+    "species": "Rabbit",
+    "age": [
+      4,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 45,
+    "name": "Goldie",
+    "species": "Fish",
+    "age": [
+      4,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 46,
+    "name": "Bubbles",
+    "species": "Fish",
+    "age": [
+      9,
+      "months"
+    ],
+    "status": "Processing entry"
+  },
+  {
+    "id": 47,
+    "name": "Nemo",
+    "species": "Fish",
+    "age": [
+      3,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 48,
+    "name": "Shelly",
+    "species": "Reptile",
+    "age": [
+      5,
+      "years"
+    ],
+    "status": "In waitlist"
+  },
+  {
+    "id": 49,
+    "name": "Speedy",
+    "species": "Reptile",
+    "age": [
+      2,
+      "years"
+    ],
+    "status": "In waitlist"
+  },
+  {
+    "id": 50,
+    "name": "Crush",
+    "species": "Reptile",
+    "age": [
+      1,
+      "year"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 51,
+    "name": "Cici",
+    "species": "Bird",
+    "age": [
+      3,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 52,
+    "name": "Polly",
+    "species": "Bird",
+    "age": [
+      4,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 53,
+    "name": "Kiwi",
+    "species": "Bird",
+    "age": [
+      5,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 54,
+    "name": "Hamtaro",
+    "species": "Rodent",
+    "age": [
+      2,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 55,
+    "name": "Bijou",
+    "species": "Rodent",
+    "age": [
+      1,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 56,
+    "name": "Oxnard",
+    "species": "Rodent",
+    "age": [
+      4,
+      "months"
+    ],
+    "status": "Available for adoption"
+  },
+  {
+    "id": 57,
+    "name": "Nanu",
+    "species": "other",
+    "age": [
+      10,
+      "years"
+    ],
+    "status": "In waitlist"
+  }
+]
