@@ -76,4 +76,13 @@ class Pet
     {
         $this->status = $status;
     }
+
+    public function getStatusImageFilename(): string
+    {
+        return match ($this->status) {
+            PetStatusEnum::WAITING => 'images/status-waiting.png',
+            PetStatusEnum::PROCESSING => 'images/status-processing.png',
+            PetStatusEnum::AVAILABLE => 'images/status-available.png',
+        };
+    }
 }
