@@ -44,6 +44,11 @@ class Pet
         return $this->status;
     }
 
+    public function getStatusString(): string
+    {
+        return $this->status->value;
+    }
+
     public function setName(string $name): void
     {
         $this->name = $name;
