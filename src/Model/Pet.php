@@ -10,7 +10,7 @@ class Pet
     public function __construct(
         private int $id,
         private string $name,
-        private string $species,
+        private PetSpeciesEnum $species,
         private array $age,
         private PetStatusEnum $status,
     ) {
@@ -26,7 +26,7 @@ class Pet
         return $this->name;
     }
 
-    public function getSpecies(): string
+    public function getSpecies(): PetSpeciesEnum
     {
         return $this->species;
     }
@@ -49,7 +49,7 @@ class Pet
         $this->name = $name;
     }
 
-    public function setSpecies(string $species): void
+    public function setSpecies(PetSpeciesEnum $species): void
     {
         $this->species = $species;
     }
