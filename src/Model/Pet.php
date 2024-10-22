@@ -12,7 +12,7 @@ class Pet
         private string $name,
         private string $species,
         private array $age,
-        private string $status,
+        private PetStatusEnum $status,
     ) {
     }
 
@@ -39,7 +39,7 @@ class Pet
         return $this->age;
     }
 
-    public function getStatus(): string
+    public function getStatus(): PetStatusEnum
     {
         return $this->status;
     }
@@ -62,7 +62,7 @@ class Pet
         $this->age = $age;
     }
 
-    public function setStatus(string $status): void
+    public function setStatus(PetStatusEnum $status): void
     {
         $this->status = $status;
     }
