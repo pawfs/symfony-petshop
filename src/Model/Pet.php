@@ -31,6 +31,11 @@ class Pet
         return $this->species;
     }
 
+    public function getSpeciesString(): string
+    {
+        return $this->species->value;
+    }
+
     /**
      * @return array{0: int, 1: string}
      */
